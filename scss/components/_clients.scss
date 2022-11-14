@@ -1,0 +1,33 @@
+.clients{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.client__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    background-color: transparent;
+    fill: #afb1b8;
+    &:hover{
+    fill: var(--accent-color);
+    background-color: var(--c-white);
+    border-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:focus{
+    fill: var(--accent-color);
+    background-color: var(--c-white);
+    border-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

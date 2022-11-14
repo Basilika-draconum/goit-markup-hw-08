@@ -1,0 +1,28 @@
+.doing__list{
+    display: flex;
+    margin-top: 50px;
+}
+
+.doing__item:not(:last-child){
+    margin-right: 30px;
+}
+.doing__item{
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    position:relative;
+}
+.doing__text{
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 2;
+    background:rgba(47, 48, 58, 0.8);
+    color:var(--c-white);
+    padding: 27px 10px;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1.1428;
+    text-align: center;
+    text-transform: uppercase;
+}

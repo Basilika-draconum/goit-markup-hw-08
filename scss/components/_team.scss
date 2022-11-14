@@ -1,0 +1,49 @@
+@import './socials';
+.team{
+    background-color: #F5F4FA;
+}
+.team__list{
+    display: flex;
+    margin-top: 50px;
+}
+.team__member{
+    background: var(--c-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.team__mate{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-top: 30px;
+}
+.team__jobs{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+.team__socials{
+    margin-top: 16px;
+}
+.socials__link--team{
+    background-color: var(--c-white);
+    fill:#afb1b8;
+    &:hover{
+    fill: var(--c-white);
+    background-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:focus{
+    fill:var(--c-white);
+    background-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}

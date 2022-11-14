@@ -1,0 +1,24 @@
+@import './logo';
+@import './site-nav';
+@import './info-nav';
+
+.page-header {
+    color: var(--c-white);
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #ECECEC;
+}
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-site {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 93px;
+}
+.header__logo--black {
+    color: #000000;
+}

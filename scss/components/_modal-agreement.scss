@@ -1,0 +1,57 @@
+.agreement {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+
+    label {
+        position: relative;
+
+        &::before{
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 15px;
+            margin-right: 7px;
+            border-radius: 2px;
+            background-image: url(../../../images/box.svg);
+            background-size: contain;
+            cursor: pointer;
+        }
+    }
+}
+.agreement input {
+    appearance: none;
+}
+
+.agreement input:checked+label::before{
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    border: 1px solid var(--accent-color);
+    background-image: url(../../../images/yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.agreement input:focus+label::before{
+    background-image: url(../../../images/yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
+}
+
+.agreement input:checked:focus+label::before{
+    background-image: url(../../../images/yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
+}
+.agreement {
+    a {
+        color: var(--accent-color);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}

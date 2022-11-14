@@ -1,0 +1,33 @@
+.info-nav {
+    display: flex;
+}
+
+.info-nav__item {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.info-nav__link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: var(--accent-color);
+    }
+
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.info-nav__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
