@@ -3,8 +3,11 @@
     background-color: #F5F4FA;
 }
 .team__list{
-    display: flex;
-    margin-top: 50px;
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-top: 50px;
+    }
 }
 .team__member{
     background: var(--c-white);
