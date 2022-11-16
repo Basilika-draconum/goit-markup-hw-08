@@ -5,9 +5,13 @@
     background-color: #2F303A;
 }
 .footer__block {
-    display: flex;
-    padding: 60px 0;
-    align-items: baseline;
+    
+    @media screen and (min-width:768px){
+        display: flex;
+        padding: 60px 0;
+        align-items: baseline;  
+    }
+    
 }
 .footer__first {
     display: flex;
@@ -79,8 +83,10 @@
     }
 }
 .footer-form__subscribe {
+    @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    }
 }
 
 .footer-form__email {
