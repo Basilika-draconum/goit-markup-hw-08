@@ -1,3 +1,8 @@
+.doing{
+    @media screen and (max-width:767px){
+        display: none;
+    }
+}
 .doing__list{
     display: flex;
     margin-top: 50px;
