@@ -105,6 +105,42 @@
   color: var(--c-white);
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ECECEC;
+  position: relative;
+}
+
+.menu-toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-toggle .icon-cross {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-cross {
+  display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
+}
+
+.header-menu__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--c-white);
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 @media screen and (min-width: 768px) {
