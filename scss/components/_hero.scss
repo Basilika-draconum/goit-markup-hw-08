@@ -10,16 +10,24 @@
     margin: 0 auto;
 }
 .hero__block {
-    padding: 200px;
+    @media screen and (min-width:1200px){
+        padding: 200px;
+    }
 }
 .hero__title {
     color: var(--c-white);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.62;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
 }
 .button-wrapper {
     display: flex;
@@ -28,7 +36,7 @@
 
 .hero__button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 10px 32px;
+    padding: 10px 24px;
     margin-top: 30px;
     transition-property: background-color;
     transition-duration: 250ms;
@@ -38,5 +46,8 @@
     }
     &:hover {
         background-color: #188CE8;
+    }
+    @media screen and (min-width: 1200px){
+        padding: 10px 32px;
     }
 }
