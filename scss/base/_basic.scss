@@ -11,9 +11,17 @@ body {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    @media screen and (min-width:$mobile){
+        width:480px;
+    }
+    @media screen and (min-width:$tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width:$desktop) {
+        width: 1200px;
+    }
 }
 .section {
     padding: 94px 0;
