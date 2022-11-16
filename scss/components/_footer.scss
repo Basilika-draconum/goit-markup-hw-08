@@ -13,6 +13,7 @@
     gap: 60px;
     @media screen and (min-width:768px){
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: baseline;  
     }
     
@@ -117,6 +118,9 @@
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-direction: column;
     }
 }
 
