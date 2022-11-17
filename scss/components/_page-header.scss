@@ -7,20 +7,6 @@
     border-bottom: 1px solid #ECECEC;
     position: relative;
 }
-.menu-toggle{
-    display: inline-flex;
-    background-color: transparent;
-    border: none;
-}
-.menu-toggle .icon-cross{
-    display: none;
-}
-.menu-toggle.js-open-menu .icon-cross {
-    display: block;
-}
-.menu-toggle.js-open-menu .icon-menu {
-    display: none;
-}
 .header-menu__container{
     position: absolute;
     top: 100%;
@@ -38,6 +24,10 @@
 }
 
 .header-block {
+    @media screen and (max-width:767px) {
+       display: flex; 
+       justify-content: space-between;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
@@ -46,6 +36,9 @@
     }
 }
 .header-site {
+    @media screen and (max-width:767px) {
+        padding: 16px 0;
+    }
     @media screen and (min-width: 768px){
         display: flex;
         align-items: center;
