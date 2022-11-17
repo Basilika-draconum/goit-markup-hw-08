@@ -1127,11 +1127,11 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-third {
+.footer__third {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  .footer-third {
+  .footer__third {
     max-width: 100%;
   }
 }
