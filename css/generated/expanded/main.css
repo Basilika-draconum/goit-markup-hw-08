@@ -1005,7 +1005,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px 0;
+  padding: 60px 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1128,6 +1128,7 @@ img {
 }
 
 .footer-third {
+  width: 100%;
   max-width: 450px;
 }
 @media screen and (max-width: 767px) {
