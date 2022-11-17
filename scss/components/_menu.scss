@@ -1,6 +1,20 @@
 .menu-container{
-
-}
-.menu__button{
     
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.menu__button {
+    .icon-cross {
+        display: none;
+    }
+}
+.menu__button.is-open {
+    .icon-cross {
+        display: block;
+    }
+
+    .icon-menu {
+        display: none;
+    }
 }
