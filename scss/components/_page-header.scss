@@ -38,11 +38,13 @@
 .header-site {
     @media screen and (max-width:767px) {
         padding: 16px 0;
-    }
-    @media screen and (min-width: 768px){
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
+    
+    
+    
 }
 .header__logo {
     margin-right: 93px;
