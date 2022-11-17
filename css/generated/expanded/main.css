@@ -1129,7 +1129,6 @@ img {
 
 .footer-third {
   width: 100%;
-  max-width: 450px;
 }
 @media screen and (max-width: 767px) {
   .footer-third {
@@ -1137,9 +1136,6 @@ img {
   }
 }
 
-.footer-form__subscribe {
-  width: 450px;
-}
 @media screen and (min-width: 768px) {
   .footer-form__subscribe {
     display: -webkit-box;

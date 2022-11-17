@@ -109,13 +109,11 @@
 }
 .footer-third{
     width: 100%;
-    max-width: 450px;
     @media screen and (max-width: 767px) {
         max-width: 100%;
     }
 }
 .footer-form__subscribe {
-    width: 450px;
 
     @media screen and (min-width: 768px) {
     display: flex;
