@@ -6,7 +6,10 @@
 .works {
     background: var(--c-white);
     max-width: 450px;
-    
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
     @media screen and (min-width: 1200px){
         max-width: 370px;
     }
@@ -19,6 +22,10 @@
     
     a {
         width: 450px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
         @media screen and (min-width: 1200px) {
             max-width: 370px;
         }

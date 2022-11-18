@@ -1357,6 +1357,11 @@ img {
   background: var(--c-white);
   max-width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .works {
+    max-width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .works {
     max-width: 370px;
@@ -1368,6 +1373,11 @@ img {
 
 .works a {
   width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .works a {
+    max-width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .works a {
