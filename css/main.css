@@ -1389,7 +1389,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .works {
-    max-width: 354px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
