@@ -22,13 +22,27 @@
         <div class="container header-block">
             <div class="header-site">
                 <a href="./index.html" class="logo header__logo">Web<span class="header__logo--black">Studio</span></a>
-                <div class="menu-container">
-                    <button type=" button" class="menu__button is-open">
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type=" button" class="menu-toggle js-close-menu">
                         <svg class="icon" width="40" height="40" aria-label="Перемикач мобільного меню">
                             <use class="icon-menu" xlink:href="./images/icons.svg#icon-menu"></use>
                             <use class="icon-cross" xlink:href="./images/icons.svg#icon-cross"></use>
                         </svg>
                     </button>
+                    <nav class="mobile-menu">
+                        <ul class="">
+                            <li class=""><a href="./index.html" class=" ">Студія</a></li>
+                            <li class=" "><a href="./portfolio.html" class="">Портфоліо</a></li>
+                            <li class=""><a href="./ " class="">Контакти</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="info-nav">
+                        <li class=""> <a href="mailto:info@devstudio.com" class="">
+                                info@devstudio.com</a></li>
+                        <li class=""><a href="tel:+380961111111" class="">
+                                +38 096 111 11 11</a></li>
+                    </ul>
                     <!-- <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
                         aria-controls="mobile-menu">
                         <svg class="icon" width="40" height="40" aria-label="Перемикач мобільного меню">
