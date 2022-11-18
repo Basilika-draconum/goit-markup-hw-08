@@ -1507,15 +1507,30 @@ img {
   top: 0;
   left: 0;
   z-index: 10;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: var(--c-white);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-container {
     display: none;
   }
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-toggle {
@@ -1538,29 +1553,50 @@ img {
   border-radius: 50%;
   outline: none;
 }
+.menu-toggle:hover {
+  fill: var(--accent-color);
+}
+.menu-toggle:focus {
+  fill: var(--accent-color);
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
-}
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
 }
 
-.menu-toggle .icon-cross {
-  display: none;
+.menu__mobile {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
-.menu-toggle.is-open .icon-cross {
-  display: block;
+.menu__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.menu-toggle.is-open .icon-menu {
-  display: none;
+.menu__socials--item {
+  padding: 5px 10px;
+}
+.menu__socials--item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.menu__socials--item a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
