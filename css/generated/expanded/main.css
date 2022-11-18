@@ -89,6 +89,7 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    text-align: start;
   }
 }
 
@@ -993,6 +994,7 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    text-align: start;
   }
 }
 
@@ -1042,6 +1044,11 @@ img {
             align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    gap: 0;
+  }
+}
 
 .footer__first {
   display: -webkit-box;
@@ -1057,7 +1064,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__first {
     margin-right: 70px;
-    margin-left: 15px;
+    text-align: start;
   }
 }
 
