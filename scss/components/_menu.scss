@@ -28,6 +28,11 @@
     border: none;
     border-radius: 50%;
     outline: none;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+        
 }
 
 @media (min-width: 768px) {
@@ -40,12 +45,12 @@
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
 }
-.menu__toggle {
+.menu-toggle {
     .icon-cross {
         display: none;
     }
 }
-.menu__toggle.is-open {
+.menu-toggle.is-open {
     .icon-cross {
         display: block;
     }

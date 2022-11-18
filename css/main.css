@@ -1538,6 +1538,11 @@ img {
   border-radius: 50%;
   outline: none;
 }
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) {
   .menu-toggle {
@@ -1549,13 +1554,13 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu__toggle .icon-cross {
+.menu-toggle .icon-cross {
   display: none;
 }
 
-.menu__toggle.is-open .icon-cross {
+.menu-toggle.is-open .icon-cross {
   display: block;
 }
-.menu__toggle.is-open .icon-menu {
+.menu-toggle.is-open .icon-menu {
   display: none;
 }/*# sourceMappingURL=main.css.map */
