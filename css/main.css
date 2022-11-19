@@ -1391,14 +1391,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .works {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .works {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
+    max-width: 370px;
   }
 }
 .works a {
@@ -1410,14 +1408,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .works a {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .works a {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
+    max-width: 370px;
   }
 }
 .works a:hover {
