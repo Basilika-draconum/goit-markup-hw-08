@@ -25,6 +25,9 @@
 
         @media screen and (min-width: 768px) {
             max-width: 354px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         @media screen and (min-width: 1200px) {
             max-width: 370px;
@@ -78,6 +81,7 @@
 .work__add {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    flex-grow: 1;
 }
 .work__title {
     font-weight: 700;
