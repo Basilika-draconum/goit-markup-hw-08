@@ -1518,6 +1518,16 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
           transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -1601,7 +1611,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
-  margin-top: 302px;
+  margin-top: 10px;
 }
 .menu__info--tel a {
   font-weight: 500;
