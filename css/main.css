@@ -1313,6 +1313,11 @@ img {
 .filter-block {
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-block {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .filter-block {
     margin-bottom: 50px;
